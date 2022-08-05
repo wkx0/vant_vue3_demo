@@ -1,4 +1,8 @@
 import { createApp } from 'vue'
 import App from './App.vue'
+import { vant } from '@/config/vant.config.js'
 
-createApp(App).mount('#app')
+const app = createApp(App);
+vant(app)
+app.mount('#app')
+
